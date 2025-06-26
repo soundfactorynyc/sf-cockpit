@@ -1,0 +1,28 @@
+.cockpit-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px;
+  background: #111;
+  border-top: 2px solid #00ff41;
+}
+.cockpit-button {
+  width: 60px;
+  height: 60px;
+  font-size: 28px;
+  color: white;
+  background: #222;
+  border: 1px solid #00ff41;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+  text-align: center;
+  line-height: 60px;
+  font-family: 'Courier New', monospace;
+}
+.cockpit-button:hover {
+  background: #00ff41;
+  color: black;
+  transform: scale(1.1);
+}
