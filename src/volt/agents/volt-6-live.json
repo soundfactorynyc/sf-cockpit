@@ -1,0 +1,16 @@
+{
+  "id": "volt-6",
+  "name": "Live Moderator",
+  "description": "Listens for live tip streams and viewer events. Triggers visuals based on spend.",
+  "scope": ["tipTrigger", "chatInput"],
+  "triggers": [
+    {
+      "when": "tip.amount >= 5",
+      "action": "triggerFX('moneyBeam')"
+    },
+    {
+      "when": "viewer.comments.includes('🔥')",
+      "action": "triggerFX('fireball')"
+    }
+  ]
+}

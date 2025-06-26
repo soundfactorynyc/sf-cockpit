@@ -1,0 +1,16 @@
+{
+  "id": "volt-2",
+  "name": "FX Perfectionist",
+  "description": "Monitors visuals. Adjusts FX load based on framerate, overdraw, and particle limit.",
+  "scope": ["canvas", "fxQualityTracker"],
+  "triggers": [
+    {
+      "when": "FPS < 45",
+      "action": "reduceParticleIntensity()"
+    },
+    {
+      "when": "FX queue > 10",
+      "action": "throttleFX()"
+    }
+  ]
+}

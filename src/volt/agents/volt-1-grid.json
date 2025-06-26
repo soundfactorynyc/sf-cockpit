@@ -1,0 +1,12 @@
+{
+  "id": "volt-1",
+  "name": "Grid Commander",
+  "description": "Watches cockpit grid. Routes all button presses to FX with cooldown + power rules.",
+  "scope": ["fx-registry", "gridActivator", "cooldownManager"],
+  "triggers": [
+    {
+      "on": "cockpitButtonClick",
+      "action": "triggerFX(buttonID)"
+    }
+  ]
+}

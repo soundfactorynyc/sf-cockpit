@@ -1,0 +1,16 @@
+{
+  "id": "volt-7",
+  "name": "System Sentinel",
+  "description": "Monitors system health. Alerts operator if power drains or performance degrades.",
+  "scope": ["powerSystem", "health.js", "cooldownManager"],
+  "triggers": [
+    {
+      "when": "power < 10",
+      "action": "flashWarning('LOW POWER')"
+    },
+    {
+      "when": "cpuLoad > 90",
+      "action": "reduceFXLoad()"
+    }
+  ]
+}
